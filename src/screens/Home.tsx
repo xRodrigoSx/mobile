@@ -23,7 +23,7 @@ const Home = () => {
       likes: 1,
       reposts: 5,
       comments: 10,
-    },
+    }
   ];
 
   return (
