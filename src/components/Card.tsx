@@ -29,19 +29,18 @@ const Card = ({
       <Image
         style={styles.contentImage}
         source={{ uri: image }}
-        resizeMode='contain'
       />
-      <View style={styles.infos}>
+      <View style={styles.infospost}>
         <View style={styles.infos}>
-        <MaterialIcons name="insert-comment" size={24} color="black"/>
+          <MaterialIcons name="insert-comment" size={24} color="black" />
           <Text style={styles.subtitle}>{comments}</Text>
         </View>
         <View style={styles.infos}>
-        <MaterialCommunityIcons name="repeat-variant" size={24} color="black" />
+          <MaterialCommunityIcons name="repeat-variant" size={24} color="black" />
           <Text style={styles.subtitle}>{reposts}</Text>
         </View>
         <View style={styles.infos}>
-        <AntDesign name="hearto" size={24} color="black" />
+          <AntDesign name="hearto" size={24} color="black" />
           <Text style={styles.subtitle}>{likes}</Text>
         </View>
       </View>
@@ -69,23 +68,31 @@ const styles = StyleSheet.create({
     padding: 10,
     marginTop: -30,
   },
-  infos: {
+  infospost: {
     flex: 1,
     flexDirection: 'row',
-    gap: 5,
-    justifyContent: 'center'
+    marginLeft: 75,
+    gap: 35,
+  },
+  infos: {
+    flexDirection: 'row',
+    flex: 1,
+    gap: 5
   },
   text: {
     width: '94%',
-    marginLeft: 10
+    marginLeft: 10,
   },
   title: {
-    fontSize: 24,
+    fontSize: 16,
+    fontWeight: "bold",
     marginVertical: 10,
-    marginBottom: 0
+    marginBottom: 0,
+    marginLeft: 5,
   },
   subtitle: {
     fontSize: 16,
+    marginLeft: 5,
   },
   avatarImage: {
     width: 50,
@@ -95,10 +102,13 @@ const styles = StyleSheet.create({
     marginLeft: 80,
   },
   contentImage: {
-    width: 200,
-    height: 200,
-    resizeMode: 'contain',
+    borderTopRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    width: 250,
+    height: 380,
     marginBottom: 15,
+    marginLeft: 70,
+    
   }
 });
 
