@@ -8,34 +8,64 @@ import { Stori } from "../types/Stori";
 
 const Home = () => {
   const feed: Stori[] = [
-    {
-      id: "1",
-      avatar: "https://source.unsplash.com/random",
-      username: "Rafael"
-    },
-    {
-      id: "2",
-      avatar: "https://source.unsplash.com/random",
-      username: "Lucas"
-    }
+      {
+        "id": "1",
+        "avatar": "https://source.unsplash.com/random?t=1",
+        "username": "Miguel"
+      },
+      {
+        "id": "2",
+        "avatar": "https://source.unsplash.com/random?t=2",
+        "username": "Lucas"
+      },
+      {
+        "id": "3",
+        "avatar": "https://source.unsplash.com/random?t=3",
+        "username": "Maria"
+      },
+      {
+        "id": "4",
+        "avatar": "https://source.unsplash.com/random?t=4",
+        "username": "Ana"
+      },
+      {
+        "id": "5",
+        "avatar": "https://source.unsplash.com/random?t=5",
+        "username": "Pedro"
+      },
+      {
+        "id": "6",
+        "avatar": "https://source.unsplash.com/random?t=6",
+        "username": "João"
+      },
+      {
+        "id": "7",
+        "avatar": "https://source.unsplash.com/random?t=7",
+        "username": "Carla"
+      },
+      {
+        "id": "8",
+        "avatar": "https://source.unsplash.com/random?t=8",
+        "username": "Paulo"
+      }
   ];
   const posts: FeedItem[] = [
     {
       id: "1",
-      avatar: "https://source.unsplash.com/random",
+      avatar: "https://source.unsplash.com/random?t=9",
       username: "Rafael",
       content: "Golfinhos são muito inteligentes, eu adorei!",
-      image: "https://source.unsplash.com/random",
+      image: "https://source.unsplash.com/random?t=11",
       likes: 10,
       reposts: 50,
       comments: 100,
     },
     {
       id: "2",
-      avatar: "https://source.unsplash.com/random",
-      username: "Fulano",
+      avatar: "https://source.unsplash.com/random?t=10",
+      username: "Luis",
       content: "Papagaios são muito chatos na moral, mas legal no visual.",
-      image: "https://source.unsplash.com/random",
+      image: "https://source.unsplash.com/random?t=12",
       likes: 1,
       reposts: 5,
       comments: 10,
@@ -58,7 +88,11 @@ const Home = () => {
               avatar={item.avatar}
               username={item.username} />
           )}
+          contentContainerStyle={{flexDirection: "row", flex: 1, gap: 14}}
+          horizontal={true}
           keyExtractor={(item) => item.id}
+          snapToInterval={100}
+          snapToAlignment="center"
         />
       </View>
       <View style={styles.container}>
@@ -101,6 +135,8 @@ const styles = StyleSheet.create({
   },
   stories: {
     backgroundColor: 'white',
+    height: 100,
+    marginLeft: 12,
   }
 });
 
