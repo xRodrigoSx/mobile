@@ -1,8 +1,4 @@
 import { StyleSheet, Text, View, Image } from "react-native";
-import { FeedItem } from "../types/Feed";
-import { MaterialIcons } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Stori } from "../types/Stori";
 
 const Stories = ({
@@ -27,6 +23,8 @@ const styles = StyleSheet.create({
         height: 56,
         width: 56,
         borderRadius: 30,
+        borderWidth: 2,
+        borderColor: "#00acee",
     },
     username: {
         fontSize: 16,

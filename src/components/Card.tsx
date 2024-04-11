@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   infos: {
     flexDirection: 'row',
     flex: 1,
-    gap: 5
+    gap: -2
   },
   text: {
     width: '94%',
@@ -88,11 +88,11 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginVertical: 10,
     marginBottom: 0,
-    marginLeft: 5,
+    marginLeft: 8,
   },
   subtitle: {
     fontSize: 16,
-    marginLeft: 5,
+    marginHorizontal: 8,
   },
   avatarImage: {
     width: 50,

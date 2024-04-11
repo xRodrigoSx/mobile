@@ -31,7 +31,7 @@ const Home = () => {
       {
         "id": "5",
         "avatar": "https://source.unsplash.com/random?t=5",
-        "username": "Pedro"
+        "username": "Thomas"
       },
       {
         "id": "6",
@@ -69,7 +69,38 @@ const Home = () => {
       likes: 1,
       reposts: 5,
       comments: 10,
+    },
+    {
+      id: "3",
+      avatar: "https://source.unsplash.com/random?t=13",
+      username: "Julia",
+      content: "A natureza é sempre surpreendente, nunca deixa de me encantar!",
+      image: "https://source.unsplash.com/random?t=14",
+      likes: 20,
+      reposts: 15,
+      comments: 30,
+    },
+    {
+      id: "4",
+      avatar: "https://source.unsplash.com/random?t=15",
+      username: "Pedro",
+      content: "A vida é melhor com um cachorro ao seu lado. 🐶❤️",
+      image: "https://source.unsplash.com/random?t=16",
+      likes: 35,
+      reposts: 25,
+      comments: 50
+    },
+    {
+      id: "5",
+      avatar: "https://source.unsplash.com/random?t=17",
+      username: "Ana",
+      content: "Explorando novos lugares e culturas!",
+      image: "https://source.unsplash.com/random?t=18",
+      likes: 15,
+      reposts: 8,
+      comments: 20
     }
+    
   ];
 
   return (
@@ -88,11 +119,9 @@ const Home = () => {
               avatar={item.avatar}
               username={item.username} />
           )}
-          contentContainerStyle={{flexDirection: "row", flex: 1, gap: 14}}
-          horizontal={true}
+          contentContainerStyle={{gap: 12}}
+          horizontal
           keyExtractor={(item) => item.id}
-          snapToInterval={100}
-          snapToAlignment="center"
         />
       </View>
       <View style={styles.container}>
@@ -136,7 +165,7 @@ const styles = StyleSheet.create({
   stories: {
     backgroundColor: 'white',
     height: 100,
-    marginLeft: 12,
+    marginHorizontal: 13.5,
   }
 });
 
