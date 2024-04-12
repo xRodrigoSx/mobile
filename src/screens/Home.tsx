@@ -106,9 +106,9 @@ const Home = () => {
   return (
     <View>
       <View style={styles.title}>
-        <Entypo name="menu" size={24} color="#00acee" />
-        <AntDesign name="twitter" size={24} color="#00acee" />
-        <Entypo name="user" size={24} color="#00acee" />
+        <Entypo name="menu" size={30} color="#00acee" />
+        <AntDesign name="twitter" size={30} color="#00acee" />
+        <Entypo name="user" size={30} color="#00acee" />
       </View>
       <View style={styles.stories}>
         <FlatList
@@ -164,8 +164,8 @@ const styles = StyleSheet.create({
   },
   stories: {
     backgroundColor: 'white',
-    height: 100,
-    marginHorizontal: 13.5,
+    height: 110,
+    marginHorizontal: 13,
   }
 });
 

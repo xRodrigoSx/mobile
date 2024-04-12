@@ -17,11 +17,11 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'column',
         alignItems: 'center',
-        marginVertical: 5,
+        justifyContent: 'center',
     },
     avatar: {
-        height: 56,
-        width: 56,
+        height: 65,
+        width: 65,
         borderRadius: 30,
         borderWidth: 2,
         borderColor: "#00acee",
